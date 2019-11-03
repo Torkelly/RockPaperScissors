@@ -1,0 +1,13 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<meta charset="ISO-8859-1">
+
+ <body>
+	<p th:text="'You selected ' + ${game.player1} + '.'"/>
+	<p th:text="'Computer selected ' + ${game.computerPlayer} + '.'"/>
+ 	<p th:text="'The winner was ' + ${game.winner} + '.'"/>
+ 	<p>Thanks for playing. Play again?</p>
+ 	<a href="/playagame?choice=rock">rock</a>
+ 	<a href="/playagame?choice=paper">paper</a>
+ 	<a href="/playagame?choice=scissors">scissors</a>
+ </body>
+</html>
